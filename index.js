@@ -6,15 +6,14 @@ const { infoMiddleware } = require("./src/middleware/info")
 
 const app = express()
 
-// app.use(infoMiddleware)
-// app.use("/user", infoMiddleware)
+
 app.use(infoRoute)
 app.use("/user", userRoute)
 app.use((error, req, res, next) => {
-    console.log("Error Middlware callded")
+    console.log("Error Middlware runnig")
     console.log(error)
     res.status(500).json({ msg: "Server Error", error: error })
 }
 )
 
-app.listen(8000) 
+app.listen(7000) 

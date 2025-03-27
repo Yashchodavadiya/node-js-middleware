@@ -1,5 +1,5 @@
 const test = (req, res) => {
-    res.status(200).json({ msg: "GET API CALLED" })
+    res.status(200).json({ msg: "API RUNNIG" })
 }
 
 
